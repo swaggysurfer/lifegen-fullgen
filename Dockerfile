@@ -4,10 +4,10 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get install -y \
     python3 python3-pip python3-venv \
     python3-dev build-essential \
-    xvfb xpra xpra-html5 \
+    xvfb xpra \
     pulseaudio alsa-base alsa-utils \
     git wget curl \
     && apt-get clean
